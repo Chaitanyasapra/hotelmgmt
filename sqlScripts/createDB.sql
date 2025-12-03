@@ -1,0 +1,10 @@
+CREATE TABLE hotels(
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+address VARCHAR(100) NOT NULL,
+total_rooms INT NOT NULL,
+available_rooms INT NOT NULL,
+price_per_night DECIMAL(12,2) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP on update current_timestamp
+);
